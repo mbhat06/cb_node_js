@@ -1,7 +1,17 @@
 {
-  "name": "ExampleApp",
+  "name": "node_example",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
+  "dependencies": {
+    "node-static": "^0.7.5",
+    "socket.io": "latest"
+	},
+   "engines": {
+    "node": "0.10.32",
+    "npm": "1.4.28"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,10 +25,5 @@
   "bugs": {
     "url": "https://github.com/mbhat06/cb_node_js/issues"
   },
-  "homepage": "https://github.com/mbhat06/cb_node_js",
-  "dependencies": {
-    "express": "^4.9.3",
-    "logfmt": "^1.1.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/mbhat06/cb_node_js"
 }
