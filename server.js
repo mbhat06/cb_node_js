@@ -3,10 +3,7 @@ var http = require('http');
 var file = new(static.Server)();
 var app = http.createServer(function (req, res) {
   file.serve(req, res);
-}).listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
-
+}).listen(process.env.PORT || 3000);
 
 // var express = require('express');
 // var app = express();
