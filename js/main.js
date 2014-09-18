@@ -1,12 +1,13 @@
 'use strict';
 
 var sendChannel;
+/*
 var sendButton = document.getElementById("sendButton");
 var sendTextarea = document.getElementById("dataChannelSend");
 var receiveTextarea = document.getElementById("dataChannelReceive");
 
 sendButton.onclick = sendData;
-
+*/
 var isChannelReady;
 var isInitiator;
 var isStarted;
@@ -31,11 +32,12 @@ var sdpConstraints = {'mandatory': {
   'OfferToReceiveVideo':true }};
 
 /////////////////////////////////////////////
-
+var querystring=window.location.search.substring(1);
 var room = location.pathname.substring(1);
+alert(querystring);
 if (room === '') {
-//  room = prompt('Enter room name:');
-  room = 'foo';
+  room = prompt('Enter room name:');
+  //room = 'foo';
 } else {
   //
 }
