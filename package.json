@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "node-static": "^0.7.5",
-    "socket.io": "latest"
+    "socket.io": "~0.9.6"
 	},
    "engines": {
     "node": "0.10.32",
