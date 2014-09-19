@@ -32,12 +32,11 @@ var sdpConstraints = {'mandatory': {
   'OfferToReceiveVideo':true }};
 
 /////////////////////////////////////////////
-var querystring=window.location.search.substring(1);
+
 var room = location.pathname.substring(1);
-alert(querystring);
 if (room === '') {
-  room = prompt('Enter room name:');
-  //room = 'foo';
+  //room = prompt('Enter room name:');
+  room = 'foo';
 } else {
   //
 }
